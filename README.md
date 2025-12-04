@@ -1,5 +1,3 @@
----
-
 # 🚀 IRTS Backend — E-Commerce API (Express + Prisma + PostgreSQL)
 
 Backend ini adalah REST API untuk aplikasi E-Commerce yang digunakan pada technical test Fullstack Developer IRTS.
@@ -23,7 +21,7 @@ Tujuan backend ini adalah menyediakan API lengkap untuk:
 
 # 📂 Project Structure
 
-```
+
 irts-backend/
 │
 ├── prisma/
@@ -57,9 +55,9 @@ irts-backend/
 ├── .env                   # Environment variables
 ├── package.json
 └── README.md
-```
 
----
+
+
 
 # 🛠️ Tech Stack
 
@@ -72,7 +70,7 @@ irts-backend/
 | Auth      | JWT             |
 | Optional  | Redis, RabbitMQ |
 
----
+
 
 # ⚙️ Environment Variables
 
