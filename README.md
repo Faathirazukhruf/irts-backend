@@ -21,38 +21,20 @@ Tujuan backend ini adalah menyediakan API lengkap untuk:
 
 # 📂 Project Structure
 
-
 irts-backend/
+│── prisma/
+│   ├── schema.prisma
+│   └── migrations/
 │
-├── prisma/
-│   ├── schema.prisma      # Prisma schema & DB models
-│   └── migrations/        # Auto-generated migrations
+│── src/
+│   ├── controllers/
+│   ├── services/
+│   ├── routes/
+│   ├── middlewares/
+│   ├── utils/
+│   └── index.js (atau index.ts)
 │
-├── src/
-│   ├── controllers/       # Handle request logic (MVC: Controller)
-│   │   ├── authController.js
-│   │   ├── productController.js
-│   │   └── userController.js
-│   │
-│   ├── middlewares/       # Auth middleware, validation, etc.
-│   │   └── authMiddleware.js
-│   │
-│   ├── models/            # Prisma model wrappers (optional)
-│   │
-│   ├── routes/            # API routes
-│   │   ├── authRoutes.js
-│   │   ├── productRoutes.js
-│   │   └── userRoutes.js
-│   │
-│   ├── services/          # Business logic layer (Clean Architecture)
-│   │
-│   ├── utils/             # Helpers (JWT, hashing, etc.)
-│   │   └── token.js
-│   │
-│   ├── server.js          # App entrypoint
-│   └── app.js             # Express config (cors, json parser)
-│
-├── .env                   # Environment variables
+├── .env
 ├── package.json
 └── README.md
 
